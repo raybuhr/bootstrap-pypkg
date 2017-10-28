@@ -58,7 +58,7 @@ def make_proj(proj_name, author, year, email, description):
     description -- SHORT_DESCRIPTION = input("Short description: ")
     """
     # create project directory structure
-    pwd = os.path.curdir
+    pwd = os.path.abspath(os.curdir)
     proj_dir = os.path.join(pwd, proj_name)
 
     # create top level project files
